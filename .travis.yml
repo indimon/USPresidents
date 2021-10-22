@@ -1,0 +1,8 @@
+language: python
+python:
+ - "3.8.7"
+ - "nightly"
+install:
+ - "pip install pytest"
+ - "pip install -r requirements.txt"
+script: python -m pytest https://github.com/indimon/USPresidents/blob/97eb30e8459e5ccc27422a0bccc8dcb71cf6924f/main.py
